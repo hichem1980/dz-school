@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DZ School - موقع تعليمي عربي فرنسي للدراسة، الفروض، والامتحانات في الجزائر."
+    />
+    <title>DZ School | Study Resources</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <div class="brand-mark">DZ</div>
+          <div>
+            <span class="brand-title">DZ School</span>
+            <small>Study Hub</small>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="#home">Accueil</a>
+          <a href="#levels">Niveaux</a>
+          <a href="#subjects">Matières</a>
+          <a href="#resources">Ressources</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="ar">AR</button>
+          <button class="lang-btn" data-lang="fr">FR</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="heroEyebrow">منصة تعليمية الجزائر</p>
+            <h1 data-i18n="heroTitle">الفروض والامتحانات لجميع المستويات</h1>
+            <p class="subtitle" data-i18n="heroSubtitle">
+              اكتشف مئات الفروض، الامتحانات، الملفات، والمذكرات عبر مختلف المراحل
+              الدراسية في الجزائر.
+            </p>
+
+            <div class="search-box">
+              <input
+                type="search"
+                id="searchInput"
+                placeholder="ابحث عن درس، مادة، أو امتحان..."
+                aria-label="Search"
+              />
+              <button data-i18n="searchBtn">بحث</button>
+            </div>
+
+            <div class="quick-stats">
+              <div>
+                <strong>1200+</strong>
+                <span data-i18n="statsFiles">ملف</span>
+              </div>
+              <div>
+                <strong>35</strong>
+                <span data-i18n="statsLevels">مستوى</span>
+              </div>
+              <div>
+                <strong>12</strong>
+                <span data-i18n="statsSubjects">مادة</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="card-header">
+              <span data-i18n="todayTrend">الموضوعات الشائعة</span>
+              <span class="badge">Live</span>
+            </div>
+
+            <ul class="trend-list">
+              <li>
+                <span class="dot blue"></span>
+                <div>
+                  <strong data-i18n="trend1Title">رياضيات 3AM</strong>
+                  <small data-i18n="trend1Meta">فرض + تصحيح</small>
+                </div>
+              </li>
+              <li>
+                <span class="dot green"></span>
+                <div>
+                  <strong data-i18n="trend2Title">لغة عربية</strong>
+                  <small data-i18n="trend2Meta">اختبارات سابقة</small>
+                </div>
+              </li>
+              <li>
+                <span class="dot orange"></span>
+                <div>
+                  <strong data-i18n="trend3Title">بكالوريا علوم</strong>
+                  <small data-i18n="trend3Meta">امتحان تجريبي</small>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="filters container" id="levels">
+        <div class="section-head">
+          <p class="eyebrow small" data-i18n="levelsEyebrow">المراحل الدراسية</p>
+          <h2 data-i18n="levelsTitle">اختر مستواك</h2>
+        </div>
+
+        <div class="level-grid">
+          <article class="level-box">
+            <span class="level-icon">🏫</span>
+            <h3 data-i18n="levelPrimary">ابتدائي</h3>
+            <p data-i18n="levelPrimaryText">تمارين وملفات تعليمية مبسطة.</p>
+          </article>
+          <article class="level-box">
+            <span class="level-icon">🎓</span>
+            <h3 data-i18n="levelMiddle">متوسط</h3>
+            <p data-i18n="levelMiddleText">فروض وامتحانات حسب كل سنة.</p>
+          </article>
+          <article class="level-box">
+            <span class="level-icon">📘</span>
+            <h3 data-i18n="levelSecondary">ثانوي</h3>
+            <p data-i18n="levelSecondaryText">أفضل الموارد للجذع المشترك.</p>
+          </article>
+          <article class="level-box">
+            <span class="level-icon">🎯</span>
+            <h3 data-i18n="levelBac">بكالوريا</h3>
+            <p data-i18n="levelBacText">امتحانات سابقة وتدريبات مكثفة.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="subjects container" id="subjects">
+        <div class="section-head">
+          <p class="eyebrow small" data-i18n="subjectsEyebrow">المواد</p>
+          <h2 data-i18n="subjectsTitle">اختر المادة</h2>
+        </div>
+
+        <div class="subject-grid">
+          <button class="subject-chip active" data-subject="all">All</button>
+          <button class="subject-chip" data-subject="math">Math</button>
+          <button class="subject-chip" data-subject="arabic">Arabe</button>
+          <button class="subject-chip" data-subject="science">Sciences</button>
+          <button class="subject-chip" data-subject="history">Histoire</button>
+          <button class="subject-chip" data-subject="english">Anglais</button>
+          <button class="subject-chip" data-subject="physics">Physique</button>
+        </div>
+      </section>
+
+      <section class="resources container" id="resources">
+        <div class="section-head resources-header">
+          <div>
+            <p class="eyebrow small" data-i18n="resourcesEyebrow">الموارد</p>
+            <h2 data-i18n="resourcesTitle">أحدث الفروض والاختبارات</h2>
+          </div>
+          <a href="#" class="text-link" data-i18n="viewMore">عرض المزيد</a>
+        </div>
+
+        <div id="resourceGrid" class="resource-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="features container">
+        <div class="section-head">
+          <p class="eyebrow small" data-i18n="featuresEyebrow">مزايا المنصة</p>
+          <h2 data-i18n="featuresTitle">كل ما تحتاجه للتعلم</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span>📚</span>
+            <h3 data-i18n="feature1Title">محتوى منظم</h3>
+            <p data-i18n="feature1Text">حفظ وتصفية أفضل الموارد حسب المستوى والمادة.</p>
+          </article>
+          <article class="feature-card">
+            <span>🧠</span>
+            <h3 data-i18n="feature2Title">تجهيز ممتاز</h3>
+            <p data-i18n="feature2Text">اختبارات وحلول ومذكرات مناسبة للتحضير.</p>
+          </article>
+          <article class="feature-card">
+            <span>📱</span>
+            <h3 data-i18n="feature3Title">تصميم متجاوب</h3>
+            <p data-i18n="feature3Text">يعمل بجودة عالية على الهاتف والكمبيوتر.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-wrap">
+        <div>
+          <div class="brand">
+            <div class="brand-mark">DZ</div>
+            <div>
+              <span class="brand-title">DZ School</span>
+              <small>Study Hub</small>
+            </div>
+          </div>
+          <p data-i18n="footerText">منصة تعليمية عربية وفرنسية للطلاب في الجزائر.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#levels">Niveaux</a>
+          <a href="#resources">Ressources</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
